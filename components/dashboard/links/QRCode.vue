@@ -12,8 +12,8 @@ const props = defineProps({
   },
 })
 const options = {
-  width: 1024,
-  height: 1024,
+  width: 650,
+  height: 650,
   data: props.data,
   margin: 10,
   qrOptions: { typeNumber: '0', mode: 'Byte', errorCorrectionLevel: 'Q' },
