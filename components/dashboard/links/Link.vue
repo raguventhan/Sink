@@ -23,7 +23,7 @@ function getLinkHost(url) {
 }
 
 const shortLink = computed(() => `${origin}/${props.link.slug}`)
-const linkIcon = computed(() => `https://unavatar.io/${getLinkHost(props.link.url)}?fallback=https://sink.cool/sink.png`)
+const linkIcon = computed(() => `https://unavatar.io/${getLinkHost(props.link.url)}?fallback=/mk512.png`)
 
 const { copy, copied } = useClipboard({ source: shortLink.value, copiedDuring: 400 })
 
@@ -47,8 +47,8 @@ function updateLink(link, type) {
           />
           <AvatarFallback>
             <img
-              src="/sink.png"
-              alt="Sink"
+              src="/mk.png"
+              alt="Miniklub"
             >
           </AvatarFallback>
         </Avatar>

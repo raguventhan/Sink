@@ -22,8 +22,8 @@ const showMenu = ref(false)
               class="flex items-center justify-center w-8 h-8 rounded-full"
             >
               <img
-                src="/sink.png"
-                alt="Sink"
+                src="/mk.png"
+                alt="Miniklub"
                 class="w-full h-full rounded-full"
               >
             </span>
@@ -48,8 +48,8 @@ const showMenu = ref(false)
                 class="flex items-center justify-center w-8 h-8 text-white bg-gray-900 rounded-full"
               >
                 <img
-                  src="/sink.png"
-                  alt="Sink"
+                  src="/mk.png"
+                  alt="Miniklub"
                   class="w-full h-full rounded-full"
                 >
               </span>
