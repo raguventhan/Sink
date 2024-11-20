@@ -23,7 +23,7 @@ function getLinkHost(url) {
 }
 
 const shortLink = computed(() => `${origin}/${props.link.slug}`)
-const linkIcon = computed(() => `https://unavatar.io/${getLinkHost(props.link.url)}?fallback=https://mklb.in/mk512.png?size=512`)
+const linkIcon = computed(() => `https://mklb.in/mk512.png`)
 
 const { copy, copied } = useClipboard({ source: shortLink.value, copiedDuring: 400 })
 
