@@ -3,11 +3,6 @@ import { z } from 'zod'
 export default eventHandler(async (event) => {
   const { cloudflare } = event.context
   const { KV } = cloudflare.env
-  if (!KV) {
-    console.error("KV Store not initialized.");
-    return { error: "KV Store not available." };
-  }
-  try {
   const { limit, cursor } = await getValidatedQuery(event, z.object({
     limit: z.coerce.number().max(1024).default(20),
     cursor: z.string().trim().max(1024).optional(),
@@ -30,9 +25,5 @@ export default eventHandler(async (event) => {
     }))
   }
   delete list.keys
-    return list
-  } catch (error) {
-    console.error("Unexpected error:", error);
-    return { error: "Internal Server Error" };
-  }
+  return list
 })
