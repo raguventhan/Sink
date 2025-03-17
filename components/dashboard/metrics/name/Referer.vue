@@ -21,7 +21,7 @@ defineProps({
       />
       <AvatarFallback>
         <img
-          src="/icon.png"
+          src="/sink.png"
           alt="Sink"
           loading="lazy"
         >
