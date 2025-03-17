@@ -26,4 +26,3 @@ logs
 site
 cache
 public/world.json
-.app.config.ts
